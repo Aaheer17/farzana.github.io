@@ -4,52 +4,414 @@
   <meta charset="utf-8" />
   <title>Farzana Yasmin Ahmad</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Farzana Yasmin Ahmad · Ph.D. Candidate in Computer Science at the University of Virginia. Scientific ML, generative models, diffusion, and evaluation for calorimeter simulations." />
   <style>
-    body { max-width: 820px; margin: 40px auto; font: 16px/1.6 system-ui, Arial, sans-serif; padding: 0 16px; }
-    header { margin-bottom: 24px; }
-    nav a { margin-right: 12px; text-decoration: none; }
-    h1 { margin: 0 0 4px; }
-    .card { border: 1px solid #ddd; border-radius: 12px; padding: 16px; margin: 16px 0; }
-    footer { margin-top: 32px; font-size: 14px; color: #666; }
+    :root {
+      --bg: #f7f7fb;
+      --fg: #222;
+      --accent: #2b6cb0;
+      --accent-soft: #e3f2ff;
+      --border: #dddddd;
+      --muted: #666666;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 900px;
+      margin: 32px auto 48px;
+      padding: 0 16px;
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+    }
+
+    header {
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+
+    h3 {
+      margin-bottom: 4px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 8px;
+    }
+
+    nav {
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      margin-right: 12px;
+      text-decoration: none;
+      color: var(--accent);
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .tagline {
+      margin: 4px 0 10px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .meta {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+      text-decoration: none;
+      color: var(--accent);
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 16px 0;
+      background: var(--card-bg);
+    }
+
+    .card ul {
+      margin: 4px 0 4px 20px;
+      padding: 0;
+    }
+
+    .subtle {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    .pill-row {
+      margin-top: 4px;
+      margin-bottom: 2px;
+    }
+
+    .pill {
+      display: inline-block;
+      font-size: 0.85rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #eef2ff;
+      margin-right: 6px;
+      margin-bottom: 4px;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 14px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        margin-top: 20px;
+      }
+      .two-col {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Farzana Yasmin Ahmad</h1>
-    <p>PhD student · Generative modeling for calorimeter simulation</p>
+    <p class="tagline">Ph.D. Candidate in Computer Science · Biocomplexity Institute, University of Virginia</p>
+    <p class="meta">Scientific Machine Learning · Generative Models (Diffusion / Flow Matching) · Evaluation for Reliable Calorimeter Simulation</p>
     <nav>
+      <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
-      <a href="#talks">Talks</a>
+      <a href="#projects">Projects</a>
+      <a href="#teaching">Teaching & Experience</a>
+      <a href="#awards">Awards & Leadership</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="links" style="margin-top:10px;">
+      <!-- Update href to your actual CV path in the repo if you add it -->
+      <a href="A_Customised_CurVe_CV_farzana.pdf">CV (PDF)</a>
+      <a href="https://scholar.google.com/citations?user=t_YdVhoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      <a href="https://www.linkedin.com/in/farzana-yasmin-ahmad-1b2235145/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/fa7sa" target="_blank" rel="noopener noreferrer">GitHub (fa7sa)</a>
+      <a href="https://github.com/Aaheer17" target="_blank" rel="noopener noreferrer">GitHub (Aaheer17)</a>
+    </div>
   </header>
+
+  <section id="about" class="card">
+    <h2>About</h2>
+    <div class="two-col">
+      <div>
+        <p>
+          I am a Ph.D. candidate in Computer Science at the University of Virginia, working at the Biocomplexity Institute under the supervision of Prof. Geoffrey C. Fox.
+          My research focuses on using <strong>scientific machine learning</strong> and <strong>generative models</strong> to build fast, reliable surrogates for complex scientific simulations, especially calorimeter shower simulation in high-energy physics.
+        </p>
+        <p>
+          I am particularly interested in how <strong>diffusion and flow-matching models</strong> can be adapted, fine-tuned, and evaluated so that they preserve key physics structures and remain trustworthy when used in real analysis pipelines.
+        </p>
+      </div>
+      <div>
+        <h3>Research areas</h3>
+        <ul>
+          <li>Scientific ML for complex systems</li>
+          <li>Generative AI (diffusion / flow matching) &amp; fine-tuning / adaptation</li>
+          <li>Rigorous evaluation of generative models for fidelity and reliability</li>
+        </ul>
+        <h3>Education</h3>
+        <ul>
+          <li><strong>Ph.D., Computer Science</strong>, University of Virginia (2021&nbsp;&ndash;&nbsp;present) &mdash; CGPA: 3.90/4.00</li>
+          <li><strong>B.Sc., Computer Science and Engineering</strong>, BUET (2015&nbsp;&ndash;&nbsp;2019) &mdash; CGPA: 3.69/4.00</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <section id="research" class="card">
     <h2>Research</h2>
-    <p>I work on physics-guided generative models (diffusion, ViT/DiT) for fast calorimeter shower simulation and correlation-aware objectives.</p>
+    <p>
+      My current work centers on physics-guided diffusion models for calorimeter showers and on systematic benchmarking of generative models for scientific data.
+    </p>
+
+    <h3>Current focus</h3>
+    <ul>
+      <li>
+        <strong>LANTERN: Physics-Guided Diffusion for Calorimeter Showers</strong><br />
+        Base diffusion objective augmented with physics-guided auxiliary losses (e.g., correlation-aware CFD, MVN likelihood, energy consistency) and timestep weighting/warm-up.
+      </li>
+      <li>
+        <strong>LANTERN → LEMURS Adaptation</strong><br />
+        Porting LANTERN to the multi-detector LEMURS dataset with additional conditioning (incident energy, θ/ϕ angles) and diffusion fine-tuning for transfer across heterogeneous calorimeter geometries.
+      </li>
+      <li>
+        <strong>CaloBench: Benchmarking Generative Models for Calorimeter Data</strong><br />
+        Multi-detector evaluation of diffusion/score-based and flow-matching models on calorimeter showers; introduced the Correlation Frobenius Distance (CFD) metric to quantify preservation of second-order structure.
+      </li>
+    </ul>
+
+    <h3>Skills snapshot</h3>
+    <div class="pill-row">
+      <span class="pill">Python (primary)</span>
+      <span class="pill">PyTorch · TensorFlow</span>
+      <span class="pill">Diffusion · Flow Matching · VAE</span>
+      <span class="pill">HuggingFace (Transformers/Diffusers)</span>
+      <span class="pill">NumPy · pandas · scikit-learn</span>
+      <span class="pill">Matplotlib · HDF5/Zarr · Streamlit</span>
+      <span class="pill">RAG &amp; retrieval metrics</span>
+      <span class="pill">Slurm · multi-GPU (DDP/NCCL)</span>
+      <span class="pill">Git &amp; GitHub</span>
+    </div>
   </section>
 
   <section id="publications" class="card">
     <h2>Publications</h2>
+    <ol>
+      <li>
+        <strong>Ahmad, Farzana Yasmin</strong>, Vanamala Venkataswamy, and Geoffrey Fox.<br />
+        &ldquo;CaloBench: A benchmark study of generative models for calorimeter showers.&rdquo;<br />
+        <em>International Symposium on Benchmarking, Measuring and Optimization (Bench 2024)</em>, Springer. (Accepted, to appear)
+      </li>
+      <li>
+        J. A. Meem, <strong>Ahmad, Farzana Yasmin</strong>, and M. A. Adnan.<br />
+        &ldquo;Distributed principal component analysis for real-time big data processing.&rdquo;<br />
+        <em>Proceedings of the 7th International Conference on Networking, Systems and Security</em>, 2020, pp. 89–99.
+      </li>
+    </ol>
+    <p class="subtle">
+      For preprints and a full list of works, please see my Google Scholar profile.
+    </p>
+  </section>
+
+  <section id="projects" class="card">
+    <h2>Selected Projects</h2>
+
+    <h3>Professional projects</h3>
     <ul>
-      <li><em>CaloBench</em>, Bench 2024 (to appear).</li>
+      <li>
+        <strong>LANTERN: Physics-Guided Diffusion for Calorimeter Showers</strong><br />
+        Physics-guided diffusion surrogate for fast calorimeter simulation with auxiliary CFD/MVN/energy objectives and timestep-aware training.
+      </li>
+      <li>
+        <strong>LANTERN → LEMURS Adaptation</strong><br />
+        Adapting LANTERN to the LEMURS dataset with extra geometric and angular conditions to study cross-detector generalization.
+      </li>
+      <li>
+        <strong>CaloBench</strong><br />
+        Benchmarking diffusion, score-based, and flow-matching models across multiple calorimeter datasets; reproducible configs and evaluation code.
+      </li>
+      <li>
+        <strong>Reinforcement Learning for Dynamic Task Scheduling</strong><br />
+        Efficient dynamic task scheduling in heterogeneous environments using reinforcement learning.
+      </li>
+    </ul>
+
+    <h3>Academic projects</h3>
+    <ul>
+      <li>
+        <strong>Mixture-of-Experts for Fake News Detection</strong><br />
+        A Mixture-of-Experts deep learning model for fake news detection, comparing MoE against baselines such as SVM and BERT.
+      </li>
+      <li>
+        <strong>PCV – A Point-Cloud-Based Network Verifier</strong><br />
+        Point-cloud based verifier that evaluates robustness of a 3D classifier (PointNet) by generating adversarial inputs.
+      </li>
+      <li>
+        <strong>Remote DNS Cache Poisoning (Kaminsky Attack)</strong><br />
+        Implemented a remote DNS cache poisoning technique following the Kaminsky attack.
+      </li>
+      <li>
+        <strong>Catch Me if I’m Angry</strong><br />
+        Human-Computer Interaction project to detect anger in email content and gently discourage users from sending messages written in anger.
+      </li>
+    </ul>
+
+    <h3>Personal projects</h3>
+    <ul>
+      <li>
+        <strong>PhinD-me-if-You-Can (Claude for Good 2025 – Student Track)</strong><br />
+        LLM-based tool to help students discover potential PhD advisors by matching research interests; built as a 7.5-hour Streamlit prototype.
+      </li>
+      <li>
+        <strong>Calo-RAG: Literature Retrieval for Calorimeter Modeling</strong><br />
+        Small RAG pipeline with prompt templates, citation-aware retrieval, and basic reranking; evaluated coverage using precision/recall on a curated query set.
+      </li>
+      <li>
+        <strong>LLM Time-Series Forecasting for Conflict-Induced Migration</strong> (learning)<br />
+        Prompt-based daily forecasts with exogenous conflict/fatality inputs and rolling-window RMSE; planned comparison to an agent-based migration model.
+      </li>
     </ul>
   </section>
 
-  <section id="talks" class="card">
-    <h2>Talks</h2>
+  <section id="teaching" class="card">
+    <h2>Teaching &amp; Experience</h2>
+
+    <h3>Research & Academic positions</h3>
     <ul>
-      <li>Lightning talk: “Why simulate showers with generative models?”</li>
+      <li>
+        <strong>Graduate Research Assistant</strong>, Biocomplexity Institute, University of Virginia (2022&nbsp;&ndash;&nbsp;present)<br />
+        Research focus: Machine learning for scientific problems.
+      </li>
+      <li>
+        <strong>Lecturer</strong>, Dept. of Computer Science, United International University (2019&nbsp;&ndash;&nbsp;2020)</strong>
+      </li>
+    </ul>
+
+    <h3>Teaching assistantships</h3>
+    <ul>
+      <li>
+        <strong>Economics of Distributed Systems</strong>, UVA, Fall 2024 &mdash; Graduate Teaching Assistant
+      </li>
+      <li>
+        <strong>Artificial Intelligence</strong>, UVA, Fall 2023 &mdash; Graduate Teaching Assistant
+      </li>
+      <li>
+        <strong>Computer Systems and Organization 2</strong>, UVA, Spring 2023 &mdash; Graduate Teaching Assistant
+      </li>
+      <li>
+        <strong>Mobile Application Development</strong>, UVA, Fall 2022 &mdash; Graduate Teaching Assistant
+      </li>
+    </ul>
+
+    <h3>Graduate coursework (selected)</h3>
+    <p class="subtle">
+      Design &amp; Analysis of Algorithms · Natural Language Processing · Hardware Accelerator · Reinforcement Learning ·
+      Neural Network Verification · Human Computer Interaction · AI for Social Good · Machine Learning for Engineers ·
+      Network Security · Formal Methods
+    </p>
+  </section>
+
+  <section id="awards" class="card">
+    <h2>Awards &amp; Leadership</h2>
+
+    <h3>Recent highlights</h3>
+    <ul>
+      <li>
+        <strong>Lightning Talk</strong>, UVA CS Research Symposium (2025) &mdash;
+        &ldquo;Benchmarking and Advancing Generative Models for Calorimeter Shower Simulation&rdquo;
+      </li>
+      <li>
+        <strong>Poster Presentation &mdash; Finalist</strong>, UVA Engineering Research Symposium (UVERS), 2025 &mdash;
+        &ldquo;Physics-Guided Autoregressive Diffusion Model for Fast Calorimeter Shower Simulation&rdquo;
+      </li>
+      <li>
+        <strong>Mentorship Chair</strong>, CS Graduate Student Group, University of Virginia (2025&nbsp;&ndash;&nbsp; )
+      </li>
+    </ul>
+
+    <h3>Leadership & service</h3>
+    <ul>
+      <li><strong>Vice President</strong>, Graduate Society of Women in Engineering, UVA (2023&nbsp;&ndash;&nbsp;2024)</li>
+      <li><strong>President</strong>, Association of Bangladeshi Students at UVA (2022&nbsp;&ndash;&nbsp;2023)</li>
+      <li><strong>International Citizen Leader Fellow</strong>, University of Virginia (2022&nbsp;&ndash;&nbsp;2023)</li>
+      <li><strong>Batch Representative</strong>, Bangladeshi Women in CSE at BUET (2018)</li>
+    </ul>
+
+    <h3>Awards & scholarships</h3>
+    <ul>
+      <li>Invitation to attend the 2023 CRA-WP Graduate Cohort Workshop for Women</li>
+      <li>Dean’s List Scholarship, BUET (2019)</li>
+      <li>University Merit List Scholarship, BUET (2017, 2018)</li>
     </ul>
   </section>
 
   <section id="contact" class="card">
     <h2>Contact</h2>
-    <p>Email: fa7sa@virginia.edu · GitHub: <a href="https://github.com/Aaheer17">Aaheer17e</a></p>
+    <p>
+      <strong>Email:</strong> fa7sa@virginia.edu
+    </p>
+    <p>
+      <strong>Affiliation:</strong><br />
+      Biocomplexity Institute &amp; Initiative<br />
+      Department of Computer Science<br />
+      University of Virginia, Charlottesville, VA, USA
+    </p>
+    <p class="subtle">
+      References available upon request.
+    </p>
   </section>
 
-  <footer>© <span id="y"></span> Farzana Yasmin Ahmad</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <footer>
+    © <span id="y"></span> Farzana Yasmin Ahmad
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
